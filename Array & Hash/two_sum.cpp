@@ -1,3 +1,6 @@
+// Problem Link: https://leetcode.com/problems/two-sum/
+// Time Complexity O(n).
+
 class Solution
 {
 public:
@@ -11,14 +14,13 @@ public:
 
             int complement = target - nums[i];
 
-            // if found in the map
+            // if pair found in the map
             if (numSet.find(complement) != numSet.end())
             {
                 return {numSet[complement], i};
             }
-
+            // Storing elements as key and its index as value
             numSet[nums[i]] = i;
-            continue;
         }
 
         return {};
