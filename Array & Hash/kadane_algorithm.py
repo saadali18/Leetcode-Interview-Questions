@@ -14,3 +14,15 @@ def maxSubArray(nums):
         maxSum = max(maxSum, currentSum)
 
     return maxSum
+
+
+# Solution 2:
+# Complexity: O(n)
+
+def max_sub_array( nums):
+    current_sum = nums[0]
+    max_sum = current_sum
+    for i in range(1, len(nums)):
+        current_sum = max(nums[i] + current_sum, nums[i])
+        max_sum = max(current_sum, max_sum)
+    return max_sum
