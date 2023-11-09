@@ -1,13 +1,12 @@
 //Problem Link : https://leetcode.com/problems/next-greater-element-i/description/
-
-//Solution 1:
+//Solution Link:https://youtu.be/V5r7PQhcJCQ?si=yoUawrOUbBs5AuVJ
 //Complexity: O(N)
 
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
     vector <int> nge;
-    stack<int> st;   
+    stack<int> st;
     unordered_map<int,int>map;
     for (int i = 0; i < nums2.size(); i++)
     {
@@ -27,4 +26,3 @@ public:
     return nge;   
     }
 };
-
