@@ -2,6 +2,10 @@
 // Problem Link : https://leetcode.com/problems/maximum-subarray/
 // Time Complexity: O(n).
 
+#include <iostream>
+#include <vector>
+
+using namespace std;
 class Solution
 {
 public:
@@ -27,11 +31,6 @@ public:
 
 // solution 2
 //  solution link : https://youtu.be/HCL4_bOd3-4?si=WJ4Lb92yGLDT1Xev
-
-#include <iostream>
-#include <vector>
-
-using namespace std;
 
 int maxSubArray(vector<int> &nums)
 {
