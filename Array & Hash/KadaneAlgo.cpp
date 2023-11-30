@@ -3,10 +3,12 @@
 #include <limits>
 using namespace std;
 
+// Problem Link: https://leetcode.com/problems/maximum-subarray/
+
 class Solution
 {
 public:
-    int maxSubArray1(vector<int> &nums) {
+    int maxSubArray1(vector<int> &nums) {   //Time Complexity: O(N)
         // Check if the array is empty
         if (nums.size() == 0) 
             return 0;
@@ -28,7 +30,7 @@ public:
         return maxSum;
     }
 
-    int maxSubArray2(vector<int> &nums) {
+    int maxSubArray2(vector<int> &nums) {   //Time Complexity: O(N)
         // Get the size of the input array
         int n = nums.size();
 
