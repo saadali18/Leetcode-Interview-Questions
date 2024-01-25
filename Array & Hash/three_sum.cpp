@@ -1,3 +1,8 @@
+// Question link on leetcode:
+// https://leetcode.com/problems/3sum/submissions/1156499729/
+
+// Time Complexity: O(n^2)
+
 class Solution {
  public:
   vector<vector<int>> threeSum(vector<int>& nums) {
