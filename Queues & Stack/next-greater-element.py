@@ -1,3 +1,7 @@
+# Problem link: https://leetcode.com/problems/next-greater-element-i/
+# Time Complexity: O(n * m)
+# Space Complexity: O(n)
+
 class Solution(object):
     def nextGreaterElement(self, nums1, nums2):
         """
