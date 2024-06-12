@@ -1,7 +1,9 @@
-
+#include <iostream>
+#include <vector>
+using namespace std;
+// Problem :Given an integer array nums, find the subarray with the largest sum,  and return its sum.
 // Problem Link : https://leetcode.com/problems/maximum-subarray/
 // Time Complexity: O(n).
-
 class Solution
 {
 public:
@@ -24,3 +26,28 @@ public:
         return maxi;
     }
 };
+
+// solution 2
+//  solution link : https://youtu.be/HCL4_bOd3-4?si=WJ4Lb92yGLDT1Xev
+
+int maxSubArray(vector<int> &nums)
+{
+    int maxSum = nums[0];
+    int currentSum = 0;
+
+    for (int item : nums)
+    {
+        if (currentSum < 0)
+        {
+            currentSum = 0;
+        }
+        currentSum += item;
+
+        if (currentSum > maxSum)
+        {
+            maxSum = currentSum;
+        }
+    }
+
+    return maxSum;
+}
