@@ -4,7 +4,7 @@
 // Solution 1:
 // Complexity: O(n+m)
 
-var nextGreaterElement = function (nums1, nums2) {
+var next_greater_element = function (nums1, nums2) {
   const nextGreater = {};
   const stack = [];
 
@@ -25,5 +25,5 @@ var nextGreaterElement = function (nums1, nums2) {
 // Example usage
 const nums1 = [4, 1, 2];
 const nums2 = [1, 3, 4, 2];
-const result = nextGreaterElement(nums1, nums2);
+const result = next_greater_element(nums1, nums2);
 console.log(result);
